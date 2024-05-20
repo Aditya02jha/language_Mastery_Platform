@@ -1,0 +1,203 @@
+.main {
+    /* Add styles for the main container */
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lightCard {
+    background-color: #e5e5e5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.darkCard {
+    background-color: #333;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.box {
+    display: flex;
+    height: 400px; 
+    overflow-y: auto;  
+    padding: 10px;
+    margin-top:30px ;
+    /* border: 1px solid #ccc; */
+}
+
+.box::-webkit-scrollbar {
+    display: none; 
+}
+
+
+.filter{
+    background-color: #007bff;
+    margin: 3px;
+    margin-left: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: white;
+    margin-top: 7px;
+}
+
+.ContentHeading{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.varietyList {
+    position: absolute;
+    top: 170px;
+    left: 20px;
+    height: 50%; 
+    width: 200px; 
+    /* background-color: #e5e5e5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 10px;
+}
+
+.varietyList:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.topic {
+    font-weight: bold;
+    font-size: 2rem;
+    /* margin-top: 200px; */
+}
+
+.description {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.addQues {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.addQues:hover {
+    background-color: #0056b3;
+}
+
+
+.questionContainer {
+    margin-bottom: 20px;
+    background-color: rebeccapurple;
+    padding: 10px;
+    border-radius: 10px;
+    /* Add margin between each question */
+}
+
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px;
+  }
+
+.question {
+    margin-bottom: 10px;
+    /* Add margin below each question */
+    font-weight: bold;
+}
+
+.optionsContainer {
+    margin-left: 20px;
+    /* Add margin to indent options */
+}
+
+.correctOption{
+    background-color: #2dd72d;
+}
+
+.incorrectOption {
+    /* background-color: #f50d0ddb;  */
+    cursor:not-allowed;
+    background-color: rgb(181, 178, 178);
+}
+
+.option {
+    cursor: pointer;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    left: 10px;
+    width: 60%;
+    margin-bottom: 5px;
+    /* Add margin between each option */
+}
+
+.disabledButton {
+    background-color: #007bff;
+    opacity: 0.6;
+    cursor: not-allowed;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.levelContainer {
+    position: fixed;
+    top: 220px; /* Adjust as per your design */
+    left: 20px; /* Adjust as per your design */
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: white; /* Set the background color */
+    padding: 10px; /* Add padding for better readability */
+    border-radius: 8px; /* Add some border-radius for styling */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+}
+
+.right{
+    position: absolute;
+    top: 170px;
+    right: 20px;
+    height: 50%; 
+    width: 190px; 
+    /* background-color: #e5e5e5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 10px;
+}
+
+.quesGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-right: 2px;
+    margin-top: 2px;
+}
+.queLink{
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 12px;
+    margin-top: 5px;
+    margin-left: 3px;
+    background-color:#007bff;
+    height: 37px;
+    width: 37px;
+    border-radius: 50%
+}
